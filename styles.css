@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+/*Body Styles*/
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width:40vw;
+    font-family: outfit;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 5em;
+    padding: 3em;
+    border-radius: 10px;
+}
+
+/*Element Styles*/
+img{
+    object-fit:fill;
+    width:100%;
+    border-radius: 10px;
+}
+
+ul, ol{
+    margin: 1rem;
+}
+
+h1,h2{
+    font-family: young-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 1.25em;
+}
+
+h2{
+    color:hsl(14, 45%, 36%);
+    font-size: .85em;
+}
+
+h3{
+    font-size: .80em;
+    color: hsl(332, 51%, 32%);
+}
+
+p, li{
+    color:hsl(24, 5%, 18%);
+    font-size: .70em;
+}
+
+li{
+    margin: 10px 0;
+}
+
+#table p b{
+    color:hsl(14, 45%, 36%);
+}
+
+/*Section Styles*/
+#prep{
+    padding: 1.25em 1.75em;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+#nutrition #cals, #carbs, #protein, #fats{
+    display: flex;
+    gap: 10em;
+}
+
+
+#nutrition #cals, #carbs, #protein{
+    margin: .10rem;
+    padding: .10rem 0;
+    border-bottom: .05em solid rgba(0, 0, 0, .15);
+    padding-bottom: .5em;
+}
+
+#nutrition{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+#table{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+/*Media Queries*/
+@media(max-width:500px){
+    main{
+        height: 100%;
+        width:100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
